@@ -1,0 +1,73 @@
+.all-middle-section {
+    display: grid;
+    place-content: center;
+    height: 37.1em;
+    width: 100%;
+    margin: auto;
+}
+
+.all-middle-section .in-section {
+    display: grid;
+    justify-content: center;
+    padding: 1em;
+    width: 72em;
+    height: 27.5em;
+}
+
+.all-middle-section .content {
+    display: grid;
+    text-align: center;
+    place-content: center;
+    width: 70em;
+    height: 25.6em;   
+}
+
+.all-middle-section .image {
+    object-fit: cover;
+    width: 70em;
+    height: 23em;
+}
+
+.all-middle-section .header {
+    display: inline-block;
+    margin-top: .3em;
+}
+
+.all-middle-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(232, 213, 41);
+}
+
+.all-middle-section .in-section {
+    background-color: white;
+    position: relative;
+}
+
+.all-middle-section .in-section::before {
+    content: '';
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    rotate: 45deg;
+    left: -2.7em;
+    top: -2.7em;
+    box-shadow: 1rem 0 .9rem -1rem rgba(0, 0, 0, .5);
+    background-color: rgb(232, 213, 41);
+}
+
+.all-middle-section .in-section::after {
+    content: '';
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    rotate: 45deg;
+    right: -2.7em;
+    bottom: -2.7em;
+    box-shadow: -1rem 0 .9rem -1rem rgba(0, 0, 0, .5);
+    background-color: rgb(232, 213, 41);
+}
+
+.all-middle-section .header {
+    font-size: 1.5em;
+    font-weight: 500;
+}

@@ -1,0 +1,81 @@
+.columns-3-section {
+    display: grid;
+    place-content: center;
+    height: 42em;
+    width: 100%;
+    margin: auto;
+}
+
+.columns-3-section .in-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+}
+
+.columns-3-section .content {
+    width: 20em;
+    height: 25em;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+.columns-3-section .content::before {
+    content: '';
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    rotate: 45deg;
+    left: -2.7em;
+    top: -2.7em;
+    box-shadow: 1rem 0 .9rem -1rem rgba(0, 0, 0, .5);
+    background-color: rgb(232, 213, 41);
+}
+
+.columns-3-section .content::after {
+    content: '';
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    rotate: 45deg;
+    right: -2.7em;
+    bottom: -2.7em;
+    box-shadow: -1rem 0 .9rem -1rem rgba(0, 0, 0, .5);
+    background-color: rgb(232, 213, 41);
+}
+
+.columns-3-section .image {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+}
+
+.columns-3-section .header {
+    display: inline-block;
+    margin: .5em;
+}
+
+.columns-3-section .paragraph {
+    display: inline-block;
+}
+
+.columns-3-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(232, 213, 41);
+}
+
+.columns-3-section .content {
+    background-color: white;
+}
+
+.columns-3-section .header {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.columns-3-section .paragraph {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
